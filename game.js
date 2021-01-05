@@ -19,12 +19,26 @@ function aiChoose() {
     return choices[indexAi].dataset.option;
 }
 
+//RESULT
+function checkResult() {
+    if (selection.player === selection.ai) {
+        return 'Draw';
+    } else if ((selection.player === 'scissors' && selection.ai === 'paper') || (selection.player === 'paper' && selection.air === 'rock') || (selection.player === 'rock' && selection.ai === 'scissors')) {
+        return 'Player won';
+    } else {
+        return 'AI won';
+    }
+
+}
+
 //CHECKING HAND 
 function start() {
     if (!selection.player) {
         return alert('You have to choose');
     }
     selection.ai = aiChoose();
+    const result = checkResult();
+    console.log(result);
 }
 
 //PLAYER CHOOSE
