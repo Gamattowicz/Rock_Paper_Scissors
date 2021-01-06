@@ -10,6 +10,7 @@ Simple JavaScript **Rock, paper, scissors game** created during course from [@Sa
 
 ## Demo
 Check demo here: [Game](https://gamattowicz.github.io/Rock_Paper_Scissors//)
+[!Game screen](game_screen.png)
 
 ## Status 
 Project is finished.
